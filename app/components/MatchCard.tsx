@@ -40,25 +40,26 @@ export default function MatchCard({ match }: MatchCardProps) {
         <div className="flex flex-col items-center space-y-2 flex-1">
           <img src={match.team1.logo} alt={match.team1.name} className="w-12 h-12 md:w-14 md:h-14 object-contain" />
           <div className="text-center font-sans">
-            <div className="text-xs font-black text-zinc-800 tracking-wide">{match.team1.name}</div>
+            <div className="text-xs font-bold tracking-wide">{match.team1.name}</div>
           </div>
         </div>
 
-        <div className="flex items-center justify-center bg-zinc-900 text-white font-custom text-[9px] font-black tracking-wider px-2.5 py-1.5 rounded-md border border-zinc-800 shadow-sm mx-2 select-none">
+        <div className="flex items-center justify-center bg-[#151515] text-white font-custom text-[8px] font-bold tracking-wider px-2 py-1 rounded-md border border-zinc-800 shadow-sm mx-2 select-none">
           VS
         </div>
 
         <div className="flex flex-col items-center space-y-2 flex-1">
           <img src={match.team2.logo} alt={match.team2.name} className="w-12 h-12 md:w-14 md:h-14 object-contain" />
           <div className="text-center font-sans">
-            <div className="text-xs font-black text-zinc-800 tracking-wide">{match.team2.name}</div>
+            <div className="text-xs font-bold tracking-wide">{match.team2.name}</div>
           </div>
         </div>
       </div>
-
-      <Button variant="gaming" className="w-full mt-6 text-[10px] md:text-[11px] font-bold tracking-widest h-12 rounded-xl uppercase font-sans">
-        RÉSERVER UN BILLET
-      </Button>
+      <div className="border-t border-[#EAEAEA] mt-4 pt-4">
+        <Button variant="gaming" className="w-full bg-[#151515] text-[10px] md:text-[11px] font-bold tracking-widest h-12 rounded-xl uppercase font-sans">
+          RÉSERVER UN BILLET
+        </Button>
+      </div>
     </div>
   );
 }

@@ -40,15 +40,15 @@ export const upcomingMatches: Match[] = [
 ];
 
 export const teamsList: Team[] = [
-  { name: "FNATIC", logoKey: "fnatic" },
-  { name: "FLUXO", logoKey: "fluxo" },
-  { name: "EDWARD GAMING", logoKey: "edg" },
-  { name: "CLOUD9", logoKey: "cloud9" },
-  { name: "ALPHA7 ESPORTS", logoKey: "alpha7" },
-  { name: "ALPHA7 ESPORTS", logoKey: "alpha7" },
-  { name: "ALPHA7 ESPORTS", logoKey: "alpha7" },
-  { name: "ALPHA7 ESPORTS", logoKey: "alpha7" },
-  { name: "ALPHA7 ESPORTS", logoKey: "alpha7" },
+  { name: "FNATIC", logo: "/team/team1.svg" },
+  { name: "FLUXO", logo: "/team/team2.svg" },
+  { name: "EDWARD GAMING", logo: "/team/team3.svg" },
+  { name: "CLOUD9", logo: "/team/team4.svg" },
+  { name: "ALPHA7 ESPORTS", logo: "/team/team5.svg" },
+  { name: "ALPHA7 ESPORTS", logo: "/team/team5.svg" },
+  { name: "ALPHA7 ESPORTS", logo: "/team/team5.svg" },
+  { name: "ALPHA7 ESPORTS", logo: "/team/team5.svg" },
+  { name: "ALPHA7 ESPORTS", logo: "/team/team5.svg" },
 ];
 
 export const newsList: NewsItem[] = [

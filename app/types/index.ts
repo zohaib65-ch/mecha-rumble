@@ -18,7 +18,7 @@ export interface Match {
 
 export interface Team {
   name: string;
-  logoKey: string;
+  logo: string;
 }
 
 export interface NewsItem {
