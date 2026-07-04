@@ -9,32 +9,18 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#f8f9fa] text-zinc-900">
-      {/* Ticker Announcement */}
+    <div className="flex flex-col  min-h-screen bg-white">
       <Ticker />
-
-      {/* Navigation Header */}
       <Navbar />
-
-      {/* Landing Page Content */}
-      <main className="flex-1 flex flex-col">
-        {/* Hero Banner Section */}
-        <Hero />
-
-        {/* Upcoming Matches Section */}
-        <UpcomingMatches />
-
-        {/* Teams / Stables Grid Section */}
-        <Teams />
-
-        {/* News and Newsletter Section */}
-        <News />
-
-        {/* Partners Section */}
-        <Partners />
-      </main>
-
-      {/* Custom Gaming Footer */}
+      <div className="px-4 sm:px-6 lg:px-8 xl:px-12">
+        <main className="flex-1 space-y-10 flex flex-col">
+          <Hero />
+          <UpcomingMatches />
+          <Teams />
+          <News />
+          <Partners />
+        </main>
+      </div>
       <Footer />
     </div>
   );

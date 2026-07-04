@@ -5,8 +5,7 @@ export interface NavLink {
 
 export interface MatchTeam {
   name: string;
-  subName: string;
-  logoColor: string;
+  logo: string;
 }
 
 export interface Match {

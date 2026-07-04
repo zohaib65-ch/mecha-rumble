@@ -4,19 +4,13 @@
   --background: #ffffff;
   --foreground: #171717;
 }
-@font-face {
-  font-family: 'MyCustomFont';
-  src: url('./assets/fonts/marsek.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-custom: 'MyCustomFont', sans-serif;
+  --font-sans: var(--font-orbitron);
+  --font-mono: var(--font-orbitron);
+  --font-custom: var(--font-orbitron);
 }
 
 @keyframes marquee {
@@ -42,6 +36,9 @@
 body {
   background: #f8f9fa;
   color: #171717;
-  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-orbitron), Arial, Helvetica, sans-serif;
 }
 
+.bg-gradient {
+  background: linear-gradient(135deg, #003699 0%, #2862CC 50%, #00CFFF 100%);
+}
