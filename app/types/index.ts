@@ -44,6 +44,6 @@ export interface FooterLink {
 export interface SocialLink {
   name: string;
   href: string;
-  iconKey: string;
+  icon: string;
 }
 

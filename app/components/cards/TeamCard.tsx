@@ -1,4 +1,4 @@
-import { Team } from "../types";
+import { Team } from "@/app/types";
 
 interface TeamCardProps {
   team: Team;

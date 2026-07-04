@@ -20,21 +20,21 @@ export const upcomingMatches: Match[] = [
     id: 2,
     date: "Dimanche 25 Juin - 14h20",
     location: "Nantes, France",
-  team1: { name: "INSA LYON", logo: "/team-insa.svg" },
+    team1: { name: "INSA LYON", logo: "/team-insa.svg" },
     team2: { name: "CENTRAL NANTE", logo: "/central-nante.svg" },
   },
   {
     id: 3,
     date: "Dimanche 25 Juin - 16h00",
     location: "Nantes, France",
-      team1: { name: "INSA LYON", logo: "/team-insa.svg" },
+    team1: { name: "INSA LYON", logo: "/team-insa.svg" },
     team2: { name: "CENTRAL NANTE", logo: "/central-nante.svg" },
   },
   {
     id: 4,
     date: "Dimanche 25 Juin - 18h00",
     location: "Nantes, France",
-     team1: { name: "INSA LYON", logo: "/team-insa.svg" },
+    team1: { name: "INSA LYON", logo: "/team-insa.svg" },
     team2: { name: "CENTRAL NANTE", logo: "/central-nante.svg" },
   },
 ];
@@ -89,7 +89,6 @@ export const newsList: NewsItem[] = [
   },
 ];
 
-
 export const partnersList: Partner[] = [
   { id: 1, name: "stc", logo: "/brand/brand1.svg" },
   { id: 2, name: "Qiddiya", logo: "/brand/brand2.svg" },
@@ -114,12 +113,12 @@ export const footerLinks: FooterLink[] = [
 ];
 
 export const socialLinks: SocialLink[] = [
-  { name: "X", href: "#", iconKey: "x" },
-  { name: "Instagram", href: "#", iconKey: "instagram" },
-  { name: "YouTube", href: "#", iconKey: "youtube" },
-  { name: "TikTok", href: "#", iconKey: "tiktok" },
-  { name: "Twitch", href: "#", iconKey: "twitch" },
-  { name: "Facebook", href: "#", iconKey: "facebook" },
-  { name: "Discord", href: "#", iconKey: "discord" },
+  { name: "X", href: "#", icon: "/footerLogo/x.svg" },
+  { name: "Instagram", href: "#", icon: "/footerLogo/instagram.svg" },
+  { name: "YouTube", href: "#", icon: "/footerLogo/youtube.svg" },
+  { name: "TikTok", href: "#", icon: "/footerLogo/tiktok.svg" },
+  { name: "Twitch", href: "#", icon: "/footerLogo/twitch.svg" },
+  { name: "Facebook", href: "#", icon: "/footerLogo/fb.svg" },
+  { name: "Thread", href: "#", icon: "/footerLogo/thread.svg" },
+  { name: "Discord", href: "#", icon: "/footerLogo/discord.svg" },
 ];
-

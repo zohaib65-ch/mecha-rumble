@@ -14,7 +14,7 @@ export default function UpcomingMatches() {
       </div>
 
       {/* Grid Layout */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
         {upcomingMatches.map((match) => (
           <MatchCard key={match.id} match={match} />
         ))}
