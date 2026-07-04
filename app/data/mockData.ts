@@ -91,16 +91,16 @@ export const newsList: NewsItem[] = [
 
 
 export const partnersList: Partner[] = [
-  { id: 1, name: "stc", logoKey: "stc" },
-  { id: 2, name: "Qiddiya", logoKey: "qiddiya" },
-  { id: 3, name: "aramco", logoKey: "aramco" },
-  { id: 4, name: "SONY", logoKey: "sony" },
-  { id: 5, name: "baras", logoKey: "baras" },
-  { id: 6, name: "Hilton", logoKey: "hilton" },
-  { id: 7, name: "ALBAIK", logoKey: "albaik" },
-  { id: 8, name: "SECRET LAB", logoKey: "secretlab" },
-  { id: 9, name: "SECRET LAB", logoKey: "secretlab" },
-  { id: 10, name: "SECRET LAB", logoKey: "secretlab" },
+  { id: 1, name: "stc", logo: "/brand/brand1.svg" },
+  { id: 2, name: "Qiddiya", logo: "/brand/brand2.svg" },
+  { id: 3, name: "aramco", logo: "/brand/brand3.svg" },
+  { id: 4, name: "SONY", logo: "/brand/brand4.svg" },
+  { id: 5, name: "baras", logo: "/brand/brand5.svg" },
+  { id: 6, name: "Hilton", logo: "/brand/brand6.svg" },
+  { id: 7, name: "ALBAIK", logo: "/brand/brand7.svg" },
+  { id: 8, name: "SECRET LAB", logo: "/brand/brand8.svg" },
+  { id: 9, name: "SECRET LAB", logo: "/brand/brand8.svg" },
+  { id: 10, name: "SECRET LAB", logo: "/brand/brand8.svg" },
 ];
 
 export const footerLinks: FooterLink[] = [

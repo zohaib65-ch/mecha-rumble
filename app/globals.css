@@ -42,3 +42,11 @@ body {
 .bg-gradient {
   background: linear-gradient(135deg, #003699 0%, #2862CC 50%, #00CFFF 100%);
 }
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

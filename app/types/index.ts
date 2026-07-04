@@ -33,7 +33,7 @@ export interface NewsItem {
 export interface Partner {
   id: number;
   name: string;
-  logoKey: string;
+  logo: string;
 }
 
 export interface FooterLink {

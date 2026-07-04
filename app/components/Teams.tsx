@@ -3,12 +3,12 @@
 import React from "react";
 import { teamsList } from "../data/mockData";
 import ViewAllLink from "./ViewAllLink";
-import TeamCard from "./TeamCard";
+import TeamCard from "./cards/TeamCard";
 
 export default function Teams() {
   return (
     <section className="w-full">
-      <div className="flex items-center justify-between mb-4 pb-4">
+      <div className="flex md:flex-row flex-col md:items-center gap-3 justify-between mb-4 pb-4">
         <h2 className="text-xl md:text-3xl font-bold text-[#151515] uppercase tracking-wider">Les Ecuries 2027</h2>
         <ViewAllLink label="Voir toutes LES ECURIES" href="#" />
       </div>

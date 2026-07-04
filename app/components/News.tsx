@@ -5,15 +5,16 @@ import { newsList } from "../data/mockData";
 import { Button } from "@/app/components/ui/button";
 import { useSlider } from "@/app/hooks/useSlider";
 import ViewAllLink from "./ViewAllLink";
+import NewsCard from "./cards/NewsCard";
 
 export default function News() {
   const { sliderRef, scroll } = useSlider(320, 24);
 
   return (
-    <section className=" w-full flex flex-col gap-12">
+    <section className=" w-full flex flex-col gap-8">
       {/* News Slider Section */}
       <div>
-        <div className="flex items-center justify-between mb-4 pb-4">
+      <div className="flex md:flex-row flex-col md:items-center gap-3 justify-between mb-4 pb-4">
           <div className="flex flex-col gap-1">
             <h2 className="text-xl md:text-3xl font-bold text-[#151515] uppercase tracking-wider"> Dernières actualités de MechaRumble</h2>
             <p className="text-[#151515] text-[17px] font-normal tracking-wider font-sans uppercase">Restez au cœur de l'action !</p>
@@ -43,41 +44,21 @@ export default function News() {
 
           <div ref={sliderRef} className="flex items-center space-x-6 overflow-x-auto pb-6 scrollbar-none snap-x snap-mandatory scroll-smooth">
             {newsList.map((item) => (
-              <div
-                key={item.id}
-                className="flex-shrink-0 w-[280px] sm:w-[320px] bg-white rounded-3xl border border-zinc-200 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden flex flex-col h-[400px] snap-start"
-              >
-                {/* Image Banner Container */}
-                <div className="h-44 w-full relative overflow-hidden bg-zinc-100 flex-shrink-0">
-                  <img src={item.imagePath} alt={item.title} className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" loading="lazy" />
-                </div>
-
-                {/* Card Body */}
-                <div className="p-5 flex flex-col justify-between flex-grow">
-                  <div className="flex flex-col space-y-3">
-                    {/* Tag/Year */}
-                    <span className="inline-block bg-[#0e77d9] text-white text-[8px] md:text-[9px] font-black tracking-widest px-2.5 py-0.5 rounded w-max select-none">{item.year}</span>
-                    {/* Title */}
-                    <h3 className="text-[11px] md:text-[12px] font-black text-zinc-900 tracking-wide leading-snug line-clamp-2 uppercase font-sans">{item.title}</h3>
-                    {/* Description */}
-                    <p className="text-[10px] text-zinc-500 font-bold leading-relaxed line-clamp-3 font-sans">{item.description}</p>
-                  </div>
-                </div>
-              </div>
+              <NewsCard key={item.id} item={item} />
             ))}
           </div>
         </div>
       </div>
 
       {/* Newsletter Signup Banner */}
-      <div className="w-full bg-white border border-zinc-200 rounded-[32px] p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 shadow-sm hover:shadow-md transition-shadow">
-        <div className="flex flex-col gap-2 max-w-3xl">
-          <h3 className="text-base md:text-xl font-black text-zinc-900 uppercase tracking-wider font-sans">Abonnez-vous à la newsletter MechaRumble</h3>
-          <p className="text-zinc-500 text-xs font-semibold leading-relaxed font-sans">
+      <div className="w-full bg-white rounded-3xl p-6 md:p-8 flex flex-col lg:flex-row lg:items-center justify-between gap-6 shadow-sm hover:shadow-md transition-shadow">
+        <div className="flex flex-col gap-2 ">
+          <h3 className="text-base md:text-[21px] font-bold text-[#151515] uppercase tracking-wider font-sans">Abonnez-vous à la newsletter MechaRumble</h3>
+          <p className="text-[#151515] text-[13px] font-normal leading-relaxed">
             Inscrivez-vous à notre newsletter pour être les premiers informés de l'ouverture des ventes et des dernières actualités de MechaRumble.
           </p>
         </div>
-        <Button variant="gaming" className="flex-shrink-0 text-[10px] md:text-[11px] font-black tracking-widest h-12 px-8 rounded-xl uppercase font-sans whitespace-nowrap">
+        <Button variant="gaming" className="flex-shrink-0 text-[10px] md:text-[11px] font-bold tracking-widest h-12 px-8 rounded-xl uppercase font-sans whitespace-nowrap">
           S'ABONNER MAINTENANT
         </Button>
       </div>

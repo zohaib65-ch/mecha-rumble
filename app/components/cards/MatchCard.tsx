@@ -3,7 +3,7 @@
 import { CalendarDays } from "lucide-react";
 import { Button } from "@/app/components/ui/button";
 
-import { MatchTeam } from "../types";
+import { MatchTeam } from "../../types";
 
 interface Match {
   id: number;
