@@ -2,7 +2,6 @@
 
 import { CalendarDays } from "lucide-react";
 import { Button } from "@/app/components/ui/button";
-
 import { MatchTeam } from "../../types";
 
 interface Match {
@@ -37,7 +36,7 @@ export default function MatchCard({ match }: MatchCardProps) {
       </div>
 
       <div className="flex items-center justify-between my-4 px-2">
-        <div className="flex flex-col items-center space-y-2 flex-1">
+        <div className="flex flex-col items-center flex-1">
           <img src={match.team1.logo} alt={match.team1.name} className="w-12 h-12 md:w-14 md:h-14 object-contain" />
           <div className="text-center font-sans">
             <div className="text-xs font-bold tracking-wide">{match.team1.name}</div>

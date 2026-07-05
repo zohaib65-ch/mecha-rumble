@@ -12,7 +12,6 @@ export default function News() {
 
   return (
     <section className=" w-full flex flex-col gap-8">
-      {/* News Slider Section */}
       <div>
       <div className="flex md:flex-row flex-col md:items-center gap-3 justify-between mb-4 pb-4">
           <div className="flex flex-col gap-1">
