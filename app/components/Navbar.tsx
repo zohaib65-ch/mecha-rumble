@@ -27,7 +27,7 @@ export default function Navbar() {
          {/* Desktop Action Buttons using shadcn Button */}
          <div className="hidden xl:flex items-center space-x-3">
           <Button asChild variant="gaming" className="text-sm font-semibold tracking-widest h-10 px-4 rounded-md font-custom">
-            <a href="#">SE CONNECTER</a>
+            <a href="/login">SE CONNECTER</a>
           </Button>
           <Button asChild variant="gaming" className="text-sm font-semibold tracking-widest h-10 px-4 rounded-md font-custom">
             <a href="#">DEVENIR PARTENAIRE</a>
@@ -73,7 +73,7 @@ export default function Navbar() {
           <hr className="border-zinc-200 my-4" />
           <div className="flex flex-col space-y-3">
             <Button asChild variant="gaming" className="text-[11px] font-bold tracking-widest py-3 rounded-md w-full font-custom">
-              <a href="#" onClick={() => setIsOpen(false)}>
+              <a href="/login" onClick={() => setIsOpen(false)}>
                 SE CONNECTER
               </a>
             </Button>

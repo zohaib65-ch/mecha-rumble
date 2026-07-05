@@ -10,7 +10,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-orbitron);
   --font-mono: var(--font-orbitron);
-  --font-custom: var(--font-orbitron);
+  --font-orbitron: var(--font-orbitron);
+  --font-custom: var(--font-montserrat);
 }
 
 @keyframes marquee {

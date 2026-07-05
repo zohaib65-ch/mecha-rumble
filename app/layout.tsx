@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
-import { Orbitron } from "next/font/google";
+import { Orbitron, Montserrat } from "next/font/google";
 import "./globals.css";
 
 const orbitron = Orbitron({
   variable: "--font-orbitron",
+  subsets: ["latin"],
+});
+
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
 });
 
@@ -25,9 +30,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${orbitron.variable} h-full antialiased`}
+      className={`${orbitron.variable} ${montserrat.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-custom">{children}</body>
+      <body className="min-h-full flex flex-col font-orbitron">{children}</body>
     </html>
   );
 }

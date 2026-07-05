@@ -11,9 +11,6 @@ This document summarizes the landing page implementation details, custom assets,
 
 ## Project Structure & Files
 
-- **`app/assets/fonts/marsek.ttf`**
-  * The custom font file copied from `D:\Local\MechaRumble\src\assets\fonts\marsek.ttf`.
-
 - **`app/lib/utils.ts`**
   * Exports the `cn` utility helper for merging tailwind classes.
 
