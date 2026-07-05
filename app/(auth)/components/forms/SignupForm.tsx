@@ -16,9 +16,9 @@ export default function SignupForm() {
       <Button
         type="submit"
         variant="gaming"
-        className="h-10 w-full rounded-[10px] bg-gradient-to-r from-[#0b48b6] to-[#0fc1ff] text-[11px] font-bold uppercase tracking-[0.22em] hover:from-[#093c99] hover:to-[#24d0ff]"
+        className="h-10 w-full rounded-[10px] bg-red-600 text-[11px] font-bold uppercase tracking-[0.22em] hover:bg-red-500"
       >
-        CREER UN COMPTE MECHARUMBLE
+        TEST CHANGE
       </Button>
 
       <p className="text-center text-[10px] leading-4 text-zinc-300">
