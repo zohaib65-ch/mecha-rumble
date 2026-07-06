@@ -23,7 +23,11 @@ const AuthField = forwardRef<HTMLInputElement, AuthFieldProps>(({ hint, error, c
           )}
           {...props}
         />
-        {endAdornment ? <div className="pointer-events-none absolute inset-y-0 right-4 flex items-center text-zinc-600">{endAdornment}</div> : null}
+        {endAdornment ? (
+          <div className="pointer-events-none absolute right-4 top-1/2 flex -translate-y-1/2 items-center text-zinc-600">
+            {endAdornment}
+          </div>
+        ) : null}
       </div>
       {hint ? <p className="text-[11px] text-zinc-400">{hint}</p> : null}
       {error ? <p className="text-[11px] text-rose-400">{error}</p> : null}

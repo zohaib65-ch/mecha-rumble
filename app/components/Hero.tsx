@@ -74,7 +74,7 @@ export default function Hero() {
           <div className="bg-gradient text-white text-[10px] md:text-[14px] font-semibold tracking-widest px-18 py-1.5 rounded-lg transform hover:scale-105 transition-transform duration-300 select-none">
             BIENTÔT DISPONIBLE
           </div>
-          <div className="flex flex-col items-center select-none font-custom text-white leading-none">
+          <div className="flex flex-col items-center select-none text-white leading-none">
             <img src="./hero-img.svg" alt="Mecha Rumble Logo" />
           </div>
           <p className="text-white text-xs sm:text-sm lg:text-lg font-bold tracking-widest max-w-4xl leading-relaxed uppercase px-4 select-text">
@@ -89,13 +89,13 @@ export default function Hero() {
               {timeItems.map((item, idx) => (
                 <React.Fragment key={item.label}>
                   {idx > 0 && (
-                    <span className="flex flex-col items-center justify-center gap-1 md:gap-1.5 px-4 md:px-6 mb-3 self-center">
+                    <span className="flex flex-col items-center justify-center gap-1 md:gap-1.5 px-2 sm:px-4 md:px-6 mb-3 self-center">
                       <span className="w-1 h-1 bg-white rounded-full"></span>
                       <span className="w-1 h-1 bg-white rounded-full"></span>
                     </span>
                   )}
                   <div className="flex flex-col items-center min-w-[55px] md:min-w-[80px]">
-                    <span className="text-3xl md:text-5xl xl:text-[64px] bg-[#FFFFFF1A] p-2 rounded-xl font-black text-white font-custom tracking-wider leading-none select-all text-center transition-all duration-300 tabular-nums">
+                    <span className="sm:text-3xl text-xl md:text-5xl xl:text-[64px] bg-[#FFFFFF1A] p-2 rounded-xl font-black text-white tracking-wider leading-none select-all text-center transition-all duration-300 tabular-nums">
                       {item.value}
                     </span>
                     <span className="text-[8px] text-white font-normal tracking-widest mt-2 font-sans select-none">{item.label}</span>

@@ -40,7 +40,9 @@ export default function Footer() {
         <div className="flex flex-col items-start md:items-end justify-between space-y-14">
           {/* Large custom logo */}
           <div className="flex flex-col items-start md:items-end select-none text-white leading-none">
-            <img src="/logo-footer.svg" alt="Logo Footer" className="w-32 md:w-auto" />
+            <a href="/" className="inline-flex">
+              <img src="/logo-footer.svg" alt="Logo Footer" className="w-32 md:w-auto" />
+            </a>
           </div>
 
           <div className="flex flex-col md:flex-row md:items-center gap-8 md:gap-14">

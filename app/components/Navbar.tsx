@@ -12,7 +12,7 @@ export default function Navbar() {
     <nav className="w-full bg-white px-4 sm:px-6 lg:px-8 xl:px-12 sticky top-0 z-50 transition-all duration-300">
       <div className="flex items-center justify-between h-20">
         <div className="flex-shrink-0 flex items-center">
-          <a href="#" className="flex flex-col items-start leading-none font-custom text-[#111111] select-none group">
+          <a href="/" className="flex flex-col items-start leading-none font-custom text-[#111111] select-none group">
            <img src="/logo-black.svg" alt="Mecha Rumble" className="h-28 w-auto" />
           </a>
         </div>
